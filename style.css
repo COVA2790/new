@@ -1,0 +1,301 @@
+body {
+  position: relative;
+  width: 1219px;
+  height: 3314px;
+  margin: 0;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 84px;
+
+  background: #ffffff;
+}
+
+#headerMain {
+  width: 1219px;
+  height: 84px;
+  margin: 0px auto;
+  z-index: 100;
+}
+
+.header {
+  position: fixed;
+  width: 1219px;
+  height: 84px;
+  left: 55px;
+  top: 0px;
+  z-index: 9999;
+
+  background: #007765 no-repeat;
+}
+
+.logo {
+  position: relative;
+  margin: 0;
+  width: 184px;
+  height: 45px;
+  left: 55px;
+  top: 20px;
+
+  background: url(Vector.png);
+}
+
+ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем отступы*/
+  padding-left: 0; /*убираем отступы*/
+}
+a {
+  position: relative;
+  width: 95px;
+  height: 29px;
+  left: 741px;
+  bottom: 15px;
+
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: normal;
+  text-align: center;
+
+  color: #ffffff;
+}
+li {
+  float: left; /*Размещаем список горизонтально для реализации меню*/
+  margin-right: 8px; /*Добавляем отступ у пунктов меню*/
+}
+
+.image {
+  position: relative;
+  width: 1219px;
+  height: 403px;
+  left: 0px;
+  top: 0px;
+
+  background: url(image.png);
+}
+
+h1 {
+  position: relative;
+  margin: 0;
+  top: 160px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: normal;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+h2 {
+  position: relative;
+  margin: 0;
+  top: 48px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: normal;
+  text-align: center;
+
+  color: #007765;
+}
+
+div {
+  position: relative;
+  width: 1219px;
+  height: 719px;
+  left: 0px;
+  top: 0px;
+
+  background: #eeeeee;
+}
+
+p {
+  position: relative;
+  width: 1110px;
+  left: 55px;
+  top: 30px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: normal;
+
+  color: #000000;
+}
+
+.Hero {
+  position: relative;
+  width: 1219px;
+  height: 483px;
+  left: 0px;
+  top: 0px;
+}
+
+.PPC {
+  position: relative;
+  width: 1219px;
+  height: 604px;
+  left: 0px;
+  top: 0px;
+
+  background: #ffffff;
+}
+
+h3 {
+  position: absolute;
+  margin: 0;
+  width: 1110px;
+  height: 75px;
+  left: 55px;
+  top: 48px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: normal;
+  text-align: center;
+
+  color: #007765;
+}
+.PPClogo {
+  position: relative;
+  width: 115px;
+  height: 115px;
+  left: 55px;
+  top: 16px;
+
+  background: url(PPCLogo.png);
+}
+
+p.cite {
+  position: relative;
+  width: 930px;
+  height: 110px;
+  left: 218px;
+  right: 19px;
+  top: 139px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: normal;
+
+  color: #000000;
+}
+
+p.PPC {
+  position: relative;
+  margin: 0;
+  width: 1110px;
+  height: 153px;
+  left: 55px;
+  top: 60px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: normal;
+
+  color: #000000;
+}
+
+.team {
+  position: relative;
+  width: 1219px;
+  height: 845px;
+  left: 0px;
+  top: 0px;
+
+  background: #eeeeee;
+}
+
+.face {
+  width: 350px;
+  height: 283px;
+  left: 55px;
+  top: 155px;
+}
+
+div.face {
+  position: relative;
+  width: 350px;
+  height: 283px;
+  left: 55px;
+  top: 155px;
+  margin: auto;
+}
+
+p.name {
+  margin: 0;
+  top: 12px;
+  text-align: center;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #007765;
+}
+
+p.prof {
+  position: relative;
+  width: 118px;
+  height: 22px;
+  margin: 0;
+  text-align: center;
+
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.image2 {
+  position: relative;
+  width: 350px;
+  height: 283px;
+  left: 526px;
+  top: 179px;
+}
+
+#foot {
+  position: relative;
+  width: 1219px;
+  height: 176px;
+  left: 0px;
+  top: 0px;
+
+  background: #333333;
+}
+
+p#foot {
+  position: relative;
+  margin: 0;
+  width: 540px;
+  height: 64px;
+  left: 340px;
+  top: 48px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: normal;
+  text-align: center;
+
+  color: #ffffff;
+}
