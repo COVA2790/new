@@ -1,70 +1,82 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* -----------------------------------------------------------------------------
+ * Global styles
+ * -----------------------------------------------------------------------------
+ */
 body {
-  position: relative;
-  width: 1219px;
-  height: 3314px;
   margin: 0;
-  padding-left: 55px;
-  padding-right: 55px;
-  padding-top: 84px;
-
-  background: #ffffff;
+  padding: 85px 0 0;
 }
 
-#headerMain {
-  width: 1219px;
-  height: 84px;
-  margin: 0px auto;
-  z-index: 100;
+.page-width {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-.header {
+/* -----------------------------------------------------------------------------
+ * Header styles
+ * -----------------------------------------------------------------------------
+ */
+header.header {
   position: fixed;
-  width: 1219px;
-  height: 84px;
-  left: 55px;
-  top: 0px;
-  z-index: 9999;
-
-  background: #007765 no-repeat;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: #007765;
+  padding: 20px 0;
+}
+.header > .inner {
+  overflow: hidden;
 }
 
-.logo {
-  position: relative;
-  margin: 0;
+.header .logo {
   width: 184px;
   height: 45px;
-  left: 55px;
-  top: 20px;
-
-  background: url(Vector.png);
+  float: left;
 }
 
-ul {
+.header ul {
   list-style: none; /*убираем маркеры списка*/
   margin: 0; /*убираем отступы*/
   padding-left: 0; /*убираем отступы*/
+  float: right;
 }
-a {
+.header ul li {
+  float: left;
+}
+.header ul li::after {
+  content: '|';
+  margin: 0 12px;
+  color: #ffffff;
   position: relative;
-  width: 95px;
-  height: 29px;
-  left: 741px;
-  bottom: 15px;
-
+  top: -2px;
+  font-size: 22px;
+}
+.header ul li:last-child::after {
+  display: none;
+}
+.header ul li a {
+  line-height: 45px;
   text-decoration: none;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  line-height: normal;
-  text-align: center;
-
   color: #ffffff;
 }
-li {
-  float: left; /*Размещаем список горизонтально для реализации меню*/
-  margin-right: 8px; /*Добавляем отступ у пунктов меню*/
-}
+
+
+
+
+
+
+
 
 .image {
   position: relative;
@@ -73,23 +85,23 @@ li {
   left: 0px;
   top: 0px;
 
-  background: url(image.png);
+  background: url(../img/image.png);
 }
 
-h1 {
-  position: relative;
-  margin: 0;
-  top: 160px;
+/*h1 {*/
+/*  position: relative;*/
+/*  margin: 0;*/
+/*  top: 160px;*/
 
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 72px;
-  line-height: normal;
-  text-align: center;
+/*  font-family: Roboto;*/
+/*  font-style: normal;*/
+/*  font-weight: 500;*/
+/*  font-size: 72px;*/
+/*  line-height: normal;*/
+/*  text-align: center;*/
 
-  color: #ffffff;
-}
+/*  color: #ffffff;*/
+/*}*/
 
 h2 {
   position: relative;
@@ -106,15 +118,6 @@ h2 {
   color: #007765;
 }
 
-div {
-  position: relative;
-  width: 1219px;
-  height: 719px;
-  left: 0px;
-  top: 0px;
-
-  background: #eeeeee;
-}
 
 p {
   position: relative;
@@ -172,8 +175,7 @@ h3 {
   height: 115px;
   left: 55px;
   top: 16px;
-
-  background: url(PPCLogo.png);
+  background: url(../img/ppc_logo.png);
 }
 
 p.cite {
@@ -276,8 +278,8 @@ p.prof {
   position: relative;
   width: 1219px;
   height: 176px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 
   background: #333333;
 }
