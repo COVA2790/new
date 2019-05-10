@@ -79,7 +79,7 @@ header.header {
   background-image: url(../img/fon.png);
   width: 100%;
   max-width: 2011px;
-  height: 403px;
+  min-height: 403px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -101,7 +101,7 @@ h1 {
 .block2 {
   width: 100%;
   max-width: 1170px;
-  height: 719px;
+  min-height: 719px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -139,7 +139,7 @@ p {
   background-image: url(../img/hero.png);
   width: 100%;
   max-width: 2011px;
-  height: 483px;
+  min-height: 483px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -164,7 +164,7 @@ p.text {
 .block4 {
   width: 100%;
   max-width: 1170px;
-  height: 604px;
+  min-height: 604px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -180,15 +180,17 @@ p.text {
 p.cite {
   position: relative;
   margin: 0;
+  padding: 0;
   max-width: 930px;
   left: 163px;
   top: 139px;
-
+  
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
   line-height: normal;
+  text-align: left;
 
   color: #000000;
 }
@@ -196,10 +198,10 @@ p.cite {
 .block5 {
   width: 100%;
   max-width: 1170px;
-  height: 845px;
+  min-height: 845px;
   margin: 0 auto;
   padding: 0 15px;
-  }
+}
 
 div.face {
   position: relative;
@@ -227,7 +229,7 @@ div.face img {
 p.name {
   position: relative;
   margin: 0;
-  text-align:center;
+  text-align: center;
 
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -241,8 +243,8 @@ p.name {
 p.prof {
   position: relative;
   margin: 0;
-  text-align:center;
-  
+  text-align: center;
+
   font-family: Roboto, sans-serif;
   font-style: italic;
   font-weight: normal;
@@ -250,16 +252,14 @@ p.prof {
   line-height: 21px;
 }
 
-
 /* ---Footer styles--- */
-
 
 .footer {
   position: relative;
   height: 176px;
   left: 0;
   right: 0;
-      
+
   background: #333333;
 }
 
@@ -269,7 +269,7 @@ p.footer {
   max-width: 540px;
   height: 64px;
   top: 50px;
-    
+
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
