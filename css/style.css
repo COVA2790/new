@@ -1,22 +1,23 @@
+/* -----------------------------------------------------------------------------
+ * Глобальные стили
+ * -----------------------------------------------------------------------------
+ */
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: border-box; /*Переключаем систему исчисления размеров всех элементов*/
 }
 
-/* -----------------------------------------------------------------------------
- * Global styles
- * -----------------------------------------------------------------------------
- */
 body {
-  margin: 0;
+  margin: 0; /*обнуляем отступы у body в 0, в разных браузерах они есть и разные*/
   padding: 85px 0 0;
 }
-
+/* Этот класс используется по всей странице, чтобы была одна ширина контентной части */
 .page-width {
-  width: 100%;
-  max-width: 1170px;
-  margin: 0 auto;
+  width: 100%;/*резиновое поведение при изменении размеров экрана*/
+  max-width: 1170px;/*пороговое значение ширины контентной части страницы*/
+  margin: 0 auto; /*отцентровать по горизонтали*/
   padding: 0 15px;
 }
 
@@ -24,7 +25,7 @@ body {
  * Header styles
  * -----------------------------------------------------------------------------
  */
-header.header {
+#page-header {
   position: fixed;
   top: 0;
   left: 0;
@@ -33,26 +34,26 @@ header.header {
   background: #007765;
   padding: 20px 0;
 }
-.header > .inner {
+#page-header > .inner {
   overflow: hidden;
 }
 
-.header .logo {
+#page-header .logo {
   width: 184px;
   height: 45px;
   float: left;
 }
 
-.header ul {
+#page-header ul {
   list-style: none; /*убираем маркеры списка*/
   margin: 0; /*убираем отступы*/
   padding-left: 0; /*убираем отступы*/
   float: right;
 }
-.header ul li {
+#page-header ul li {
   float: left;
 }
-.header ul li::after {
+#page-header ul li::after {
   content: "|";
   margin: 0 12px;
   color: #ffffff;
@@ -60,10 +61,10 @@ header.header {
   top: -2px;
   font-size: 22px;
 }
-.header ul li:last-child::after {
+#page-header ul li:last-child::after {
   display: none;
 }
-.header ul li a {
+#page-header ul li a {
   line-height: 45px;
   text-decoration: none;
   font-family: Roboto, sans-serif;
@@ -73,178 +74,172 @@ header.header {
   color: #ffffff;
 }
 
-/* ---Section styles--- */
+/* -----------------------------------------------------------------------------
+ * Main styles
+ * -----------------------------------------------------------------------------
+ */
 
-.block1 {
-  background-image: url(../img/fon.png);
-  width: 100%;
-  max-width: 2011px;
-  min-height: 403px;
-  margin: 0 auto;
-  padding: 0 15px;
+
+/*
+ * Hero section ----------------------------------------------------------------
+ */
+#hero-section {
+  background: url(../img/fon.png) no-repeat center;
+  background-size: cover;/*Почитай про это св-во*/
+  padding: 180px 0;/*Отступы чтобы расширить блок по высоте*/
 }
-
-h1 {
-  position: relative;
+#hero-section h1 {
   margin: 0;
-  top: 160px;
-
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 72px;
-  line-height: 84px;
+  line-height: 1;/*Это равно font-size, то есть 72px*/
   text-align: center;
   color: #ffffff;
 }
+/*
+ * Problem section -------------------------------------------------------------
+ */
 
-.block2 {
-  width: 100%;
-  max-width: 1170px;
-  min-height: 719px;
-  margin: 0 auto;
-  padding: 0 15px;
+#problem-section {
+  padding: 50px 0;
 }
 
-h2 {
-  position: relative;
+#problem-section h2 {
   margin: 0;
-  top: 48px;
-
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 64px;
-  line-height: normal;
+  line-height: 1;
   text-align: center;
-
   color: #007765;
 }
-
-p {
-  position: relative;
-  top: 30px;
-  text-align: left;
-
+#problem-section p {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
-  line-height: normal;
-
-  color: #000000;
+  line-height: 1.15;
+}
+#problem-section p:last-child {
+  margin-bottom: 0;
 }
 
-.block3 {
-  background-image: url(../img/hero.png);
-  width: 100%;
-  max-width: 2011px;
-  min-height: 483px;
-  margin: 0 auto;
-  padding: 0 15px;
+/*
+ * Highlight section -----------------------------------------------------------
+ */
+
+#highlight-section {
+  padding: 100px 0;
+  background: url(../img/hero.png) no-repeat center;
+  background-size: cover;
 }
 
-p.text {
-  position: relative;
-  max-width: 893px;
-  top: 128px;
-  margin: 0 auto;
-
+#highlight-section p {
   font-family: Roboto, sans-serif;
   font-style: italic;
   font-weight: 500;
   font-size: 48px;
-  line-height: 56px;
+  line-height: 1.15;
   text-align: center;
-  vertical-align: middle;
-
   color: #ffffff;
 }
 
-.block4 {
-  width: 100%;
-  max-width: 1170px;
-  min-height: 604px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
+/*
+ * Ppc section -----------------------------------------------------------------
+ */
 
-.ppclogo {
-  position: relative;
-  width: 115px;
-  height: 115px;
-  top: 16px;
-  background: url(../img/ppclogo.png);
+#ppc-section {
+  padding: 50px 0;
 }
-
-p.cite {
+#ppc-section h2 {
+  margin: 0 0 60px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 1;
+  text-align: center;
+  color: #007765;
+}
+#ppc-section .wrapper {
   position: relative;
-  margin: 0;
-  padding: 0;
-  max-width: 930px;
-  left: 163px;
-  top: 139px;
-  
+  margin-bottom: 32px;
+}
+#ppc-section p {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
-  line-height: normal;
-  text-align: left;
-
-  color: #000000;
+  line-height: 1.15;
 }
-
-.block5 {
-  width: 100%;
-  max-width: 1170px;
-  min-height: 845px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-div.face {
-  position: relative;
-  width: 350px;
-  height: 283px;
+#ppc-section p.cite {
+  padding-left: 145px;
   margin: 0;
+}
+#ppc-section .ppclogo {
+  position: absolute;
+  width: 115px;
+  height: 115px;
+  top: 50%;
+  left: 0;
+  margin-top: -57px;
+  background: url(../img/ppclogo.png) no-repeat center;
+  background-size: cover;
+}
+
+/*
+ * Team section -----------------------------------------------------------------
+ */
+
+#team-section {
+  margin-bottom: 30px;
+}
+#team-section h2 {
+  margin: 0 0 60px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 1;
   text-align: center;
+  color: #007765;
 }
-
-.flex {
-  position: relative;
-  margin: 35px 45px;
-  top: 32px;
-  display: flex;
-  flex-flow: row wrap;
-  align-content: center;
+#team-section .grid {
+  overflow: hidden;
 }
-
-div.face img {
+#team-section .grid .face {
+  float: left;
+  width: 33.3333%;
+  margin-bottom: 30px;
+}
+/*Медиазапрос для мобильной версии, просто решил пример показать*/
+@media all and (max-width: 749px) {
+  #team-section .grid .face {
+    width: 50%;
+  }
+}
+#team-section .grid .face img {
   width: 168px;
   height: 168px;
-  margin: 24px auto 0;
+  margin: 0 auto;
+  display: block;
 }
-
-p.name {
-  position: relative;
-  margin: 0;
+#team-section .grid .face .name {
   text-align: center;
-
+  margin: 0;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
-
   color: #007765;
 }
-
-p.prof {
-  position: relative;
+#team-section .grid .face .prof {
   margin: 0;
   text-align: center;
-
   font-family: Roboto, sans-serif;
   font-style: italic;
   font-weight: normal;
@@ -254,28 +249,20 @@ p.prof {
 
 /* ---Footer styles--- */
 
-.footer {
-  position: relative;
-  height: 176px;
-  left: 0;
-  right: 0;
-
+#page-footer {
   background: #333333;
+  padding: 40px 0;
 }
 
-p.footer {
-  position: relative;
+#page-footer p {
   margin: 0 auto;
+  width: 100%;
   max-width: 540px;
-  height: 64px;
-  top: 50px;
-
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-
   color: #ffffff;
 }

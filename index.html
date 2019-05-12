@@ -1,38 +1,41 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="ru-RU">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Текст вкладки страницы, очень важен для SEO</title>
   <link rel="stylesheet" href="css/style.css">
-  <title>Какая-то хня</title>
 </head>
 
 <body>
+
   <!-- Header -->
-  <header class="header">
+  <header id="page-header">
     <div class="page-width inner">
       <div class="logo">
-        <a href="#logo"><img src="img/logo.png" alt="Site logo"></a>
+        <a href="/"><img src="img/logo.png" alt="Site logo"></a>
       </div>
       <ul>
-        <li><a href="#problem">the problem</a></li>
-        <li><a href="#ppc">PiedPiperCoin</a></li>
-        <li><a href="#team">the team</a></li>
+        <li><a href="#problem-section" data-scroll>the problem</a></li>
+        <li><a href="#ppc-section" data-scroll>PiedPiperCoin</a></li>
+        <li><a href="#team-section" data-scroll>the team</a></li>
       </ul>
     </div>
   </header>
 
+  <!-- Main -->
   <main>
-    <section><a name="logo"></a>
-      <div class="block1">
+
+    <!-- Hero section -->
+    <section id="hero-section">
+      <div class="page-width">
         <h1>PiperNet Is Here</h1>
       </div>
     </section>
 
-    <section><a name="problem"></a>
-      <div class="block2">
+    <!-- Problem section -->
+    <section id="problem-section">
+      <div class="page-width">
         <h2>The Problem</h2>
         <p>Beneath the flashy homepages of your favorite sites lurk Hooli™ and other evil corporations
           out to hoard and sell your most personal data.</p>
@@ -44,30 +47,38 @@
         <p>Put even simpler — <strong>it’s the internet, completely decentralized.</strong></p>
       </div>
     </section>
-    <section>
-      <div class="block3">
-        <p class="text"> We’re in this together! All of our computers and
+
+    <!-- Highlight section -->
+    <section id="highlight-section">
+      <div class="page-width">
+        <p> We’re in this together! All of our computers and
           phones join in a network to make the strongest supercomputer the world has ever seen.</p>
       </div>
     </section>
-    <section><a name="ppc"></a>
-      <div class="block4">
+
+    <!-- Ppc section -->
+    <section id="ppc-section">
+      <div class="page-width">
         <h2>Introducing PiedPiperCoin</h2>
-        <p class="cite">Pied Piper's new internet is built <em>for users, by users.</em>
-          <br>You supply the storage, compute, and networking resources that
-          power our entire decentralized web.
-        </p>
-        <div class="ppclogo"></div>
+        <div class="wrapper">
+          <p class="cite">Pied Piper's new internet is built <em>for users, by users.</em>
+            <br>You supply the storage, compute, and networking resources that
+            power our entire decentralized web.
+          </p>
+          <div class="ppclogo"></div>
+        </div>
         <p>Now there's a way to give credit where credit is due. Compute credit, that is!
           <br>The more you share your device resources, the more PiedPiperCoin you receive.</p>
         <p>Whether you're a developer with an app ready for market, or just an
           Average Joe with a smartphone you'll love all you can do with PiedPiperCoin.</p>
       </div>
     </section>
-    <section><a name="team"></a>
-      <div class="block5">
+
+    <!-- Team section -->
+    <section id="team-section">
+      <div class="page-width">
         <h2>The Team</h2>
-        <section class="flex">
+        <div class="grid">
           <div class="face">
             <img src="img/image1.png" alt="image1">
             <p class="name">Richard Hendricks</p>
@@ -98,16 +109,22 @@
             <p class="name">Nelson Bighetti</p>
             <p class="prof">Majority Investor</p>
           </div>
-        </section>
+        </div>
       </div>
     </section>
   </main>
-  <footer>
-    <div class="footer">
-      <p class="footer">All other trademarks and copyrights are the property of their respective owners.
+
+  <!-- Page footer -->
+  <footer id="page-footer">
+    <div class="page-width">
+      <p>All other trademarks and copyrights are the property of their respective owners.
         Use of these names, trademarks and brands does not imply endorsement.</p>
     </div>
   </footer>
+
+  <!-- Java Script -->
+  <script src="js/libs/smooth-scroll.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
